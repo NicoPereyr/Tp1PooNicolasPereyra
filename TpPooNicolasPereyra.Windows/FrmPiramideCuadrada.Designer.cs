@@ -44,6 +44,7 @@
             // txtLado
             // 
             txtLado.Location = new Point(79, 40);
+            txtLado.MaxLength = 3;
             txtLado.Name = "txtLado";
             txtLado.Size = new Size(100, 23);
             txtLado.TabIndex = 1;
@@ -51,6 +52,7 @@
             // txtAltura
             // 
             txtAltura.Location = new Point(79, 90);
+            txtAltura.MaxLength = 3;
             txtAltura.Name = "txtAltura";
             txtAltura.Size = new Size(100, 23);
             txtAltura.TabIndex = 2;
