@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilidades", "Utilidades", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "ExtensionesConsola\Utilidades.csproj", "{977CB794-19BE-4B1E-9798-E34FAAEC5D79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpPooNicolasPereyra.Windows", "TpPooNicolasPereyra.Windows\TpPooNicolasPereyra.Windows.csproj", "{EC76AF80-B7A9-4730-80FA-C677E5712750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{977CB794-19BE-4B1E-9798-E34FAAEC5D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977CB794-19BE-4B1E-9798-E34FAAEC5D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977CB794-19BE-4B1E-9798-E34FAAEC5D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

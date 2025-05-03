@@ -1,9 +1,10 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace TpPooNicolasPereyra.Entidades
 {
-    public class PiramideCuadrada
+    public class PiramideCuadrada:IValidatableObject
     {
         private int lado;
         private int altura;
@@ -55,6 +56,23 @@ namespace TpPooNicolasPereyra.Entidades
             sb.AppendLine($"Area.............:{CalcularAreaTotal():F2}");
             sb.AppendLine($"Apotema..............:{apotema}");
             return sb.ToString();
+        }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            if (lado <= 0)
+            {
+                yield return new ValidationResult("El lado de la base debe ser positiva");
+            }
+            if (altura <= 0)
+            {
+                yield return new ValidationResult("La altura debe ser positiva");
+            }
+        }
+
+        public string MostrarDatos()
+        {
+            return $"Lado: {lado}, Altura: {altura}, Apotema: {apotema}";
         }
     }
 
