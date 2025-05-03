@@ -54,7 +54,7 @@ namespace TpPooNicolasPereyra.Entidades
             sb.AppendLine($"Altura.............:{altura}");
             sb.AppendLine($"Volumen............:{CalcularVolumen():F2}");
             sb.AppendLine($"Area.............:{CalcularAreaTotal():F2}");
-            sb.AppendLine($"Apotema..............:{apotema}");
+            sb.AppendLine($"Apotema..............:{apotema:F2}");
             return sb.ToString();
         }
 
@@ -72,7 +72,7 @@ namespace TpPooNicolasPereyra.Entidades
 
         public string MostrarDatos()
         {
-            return $"Lado: {lado}, Altura: {altura}, Apotema: {apotema}";
+            return $"Pirámide Cuadrada de Lado: {lado}, Altura: {altura}";
         }
     }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             txtLado = new TextBox();
             txtAltura = new TextBox();
             label1 = new Label();
@@ -36,6 +37,8 @@
             btnCancelar = new Button();
             LstPiramideCuadrada = new ListBox();
             label3 = new Label();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // txtLado
@@ -43,14 +46,14 @@
             txtLado.Location = new Point(79, 40);
             txtLado.Name = "txtLado";
             txtLado.Size = new Size(100, 23);
-            txtLado.TabIndex = 0;
+            txtLado.TabIndex = 1;
             // 
             // txtAltura
             // 
             txtAltura.Location = new Point(79, 90);
             txtAltura.Name = "txtAltura";
             txtAltura.Size = new Size(100, 23);
-            txtAltura.TabIndex = 1;
+            txtAltura.TabIndex = 2;
             // 
             // label1
             // 
@@ -75,16 +78,17 @@
             btnOK.Location = new Point(35, 143);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(83, 42);
-            btnOK.TabIndex = 4;
+            btnOK.TabIndex = 3;
             btnOK.Text = "OK";
             btnOK.UseVisualStyleBackColor = true;
+            btnOK.Click += btnOK_Click;
             // 
             // btnCancelar
             // 
             btnCancelar.Location = new Point(176, 143);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(83, 42);
-            btnCancelar.TabIndex = 5;
+            btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -95,7 +99,7 @@
             LstPiramideCuadrada.ItemHeight = 15;
             LstPiramideCuadrada.Location = new Point(35, 229);
             LstPiramideCuadrada.Name = "LstPiramideCuadrada";
-            LstPiramideCuadrada.Size = new Size(206, 94);
+            LstPiramideCuadrada.Size = new Size(302, 94);
             LstPiramideCuadrada.TabIndex = 6;
             // 
             // label3
@@ -106,6 +110,10 @@
             label3.Size = new Size(161, 15);
             label3.TabIndex = 7;
             label3.Text = "Lista de Pirámides Cuadradas";
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
             // 
             // FrmPiramideCuadrada
             // 
@@ -122,6 +130,7 @@
             Controls.Add(txtLado);
             Name = "FrmPiramideCuadrada";
             Text = "Pirámide Cuadrada";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +145,6 @@
         private Button btnCancelar;
         private ListBox LstPiramideCuadrada;
         private Label label3;
+        private ErrorProvider errorProvider1;
     }
 }

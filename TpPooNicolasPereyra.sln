@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "ExtensionesCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpPooNicolasPereyra.Windows", "TpPooNicolasPereyra.Windows\TpPooNicolasPereyra.Windows.csproj", "{EC76AF80-B7A9-4730-80FA-C677E5712750}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpPooNicolasPereyra.Test", "TpPooNicolasPereyra.Test\TpPooNicolasPereyra.Test.csproj", "{E2EDC674-2CE5-4786-A551-6FB8FD05B7B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC76AF80-B7A9-4730-80FA-C677E5712750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2EDC674-2CE5-4786-A551-6FB8FD05B7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2EDC674-2CE5-4786-A551-6FB8FD05B7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2EDC674-2CE5-4786-A551-6FB8FD05B7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2EDC674-2CE5-4786-A551-6FB8FD05B7B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
