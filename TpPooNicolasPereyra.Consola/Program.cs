@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Drawing;
 using TpPooNicolasPereyra.Entidades;
 using Utilidades;
 
@@ -11,8 +10,8 @@ namespace TpPooNicolasPereyra.Consola
         {
             Console.WriteLine("Hello, Piramides");
 
-            var lado = ExtensionesConsola.PedirEntero("Ingrese el valor del lado de la base de la pirámide:");
-            var altura = ExtensionesConsola.PedirEntero("Ingrese el valor de la altura de la pirámide:");
+            var lado = ExtensionesConsola.PedirEnteroPositivo("Ingrese el valor del lado de la base de la pirámide:");
+            var altura = ExtensionesConsola.PedirEnteroPositivo("Ingrese el valor de la altura de la pirámide:");
 
             PiramideCuadrada r = new PiramideCuadrada(lado, altura);
 

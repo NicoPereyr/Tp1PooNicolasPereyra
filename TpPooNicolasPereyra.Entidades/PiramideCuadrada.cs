@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TpPooNicolasPereyra.Entidades
 {
-    public class PiramideCuadrada:IValidatableObject
+    public class PiramideCuadrada : IValidatableObject
     {
         private int lado;
         private int altura;
@@ -44,17 +44,17 @@ namespace TpPooNicolasPereyra.Entidades
         {
             return (Math.Pow(lado, 2) * altura) / 3.0;
         }
-        public int Lado { get => lado;}
-        public int Altura { get => altura;}
+        public int Lado { get => lado; }
+        public int Altura { get => altura; }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Lado de la base: {lado}");
-            sb.AppendLine($"Altura.............:{altura}");
-            sb.AppendLine($"Volumen............:{CalcularVolumen():F2}");
-            sb.AppendLine($"Area.............:{CalcularAreaTotal():F2}");
-            sb.AppendLine($"Apotema..............:{apotema:F2}");
+            sb.AppendLine($"Altura:{altura}");
+            sb.AppendLine($"Volumen:{CalcularVolumen():F2}");
+            sb.AppendLine($"Area:{CalcularAreaTotal():F2}");
+            sb.AppendLine($"Apotema:{apotema:F2}");
             return sb.ToString();
         }
 

@@ -50,6 +50,14 @@ namespace Utilidades
             } while (true);
 
         }
+
+        public static int PedirEnteroPositivo(string mensaje)
+        {
+            return PedirEntero(mensaje, min: 1);
+        }
+
+
+
         /// <summary>
         /// Método para pedir el ingreso del nro de cuenta
         /// </summary>
@@ -169,6 +177,7 @@ namespace Utilidades
             } while (true);
 
         }
+
 
     }
 }
