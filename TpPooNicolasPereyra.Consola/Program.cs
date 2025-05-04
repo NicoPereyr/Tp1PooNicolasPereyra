@@ -13,14 +13,14 @@ namespace TpPooNicolasPereyra.Consola
             var lado = ExtensionesConsola.PedirEnteroPositivo("Ingrese el valor del lado de la base de la pirámide:");
             var altura = ExtensionesConsola.PedirEnteroPositivo("Ingrese el valor de la altura de la pirámide:");
 
-            PiramideCuadrada r = new PiramideCuadrada(lado, altura);
+            PiramideCuadrada p = new PiramideCuadrada(lado, altura);
 
-            var context = new ValidationContext(r);
+            var context = new ValidationContext(p);
             var errors = new List<ValidationResult>();
-            var isValid = Validator.TryValidateObject(r, context, errors, true);
+            var isValid = Validator.TryValidateObject(p, context, errors, true);
             if (isValid)
             {
-                Console.WriteLine(r);
+                Console.WriteLine(p);
             }
             else
             {

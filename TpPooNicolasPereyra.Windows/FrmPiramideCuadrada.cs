@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Drawing;
 using System.Text;
 using TpPooNicolasPereyra.Entidades;
 
@@ -70,12 +69,12 @@ namespace TpPooNicolasPereyra.Windows
             if (!int.TryParse(txtLado.Text, out _))
             {
                 valido = false;
-                errorProvider1.SetError(txtLado, "Lado mal ingresada");
+                errorProvider1.SetError(txtLado, "Lado mal ingresado");
             }
             if (!int.TryParse(txtAltura.Text, out _))
             {
                 valido = false;
-                errorProvider1.SetError(txtAltura, "Altura mal ingresada");
+                errorProvider1.SetError(txtAltura, "Altura mal ingresado");
             }
             return valido;
         }
